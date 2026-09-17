@@ -3234,3 +3234,67 @@ video {
 
 
 
+
+
+/* --- Pure CSS Dropdown --- */
+.nav-item.has-dropdown { position: relative; }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(3, 14, 22, 0.12);
+  padding: 8px;
+  margin: 0;
+  list-style: none;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
+}
+
+/* bridges the gap so the menu doesn't close while moving the mouse diagonally into it */
+.nav-item.has-dropdown::after {
+  content: "";
+  position: absolute;
+  top: 100%; left: 0; right: 0;
+  height: 12px;
+}
+
+.nav-item.has-dropdown:hover .dropdown-menu,
+.nav-item.has-dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #111827;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.dropdown-menu li a:hover {
+  background: #f8fafc;
+  color: #2563eb;
+}
+
+.dropdown-arrow {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 10px;
+  transition: transform 0.22s ease;
+}
+
+.nav-item.has-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }

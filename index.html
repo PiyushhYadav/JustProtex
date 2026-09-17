@@ -71,40 +71,25 @@
 <!-- Minimal Editorial Navigation -->
 <nav class="desktop-nav" id="main-nav" data-purpose="primary-navigation">
 <a class="hover:text-brand-charcoal transition-colors" href="index.html">Home</a>
-<div class="relative dropdown-container" id="solutions-dropdown-container">
-<button class="flex items-center gap-1 text-brand-charcoal hover:text-brand-blue transition-colors py-1 dropdown-trigger" aria-expanded="false" aria-controls="solutions-menu">
-            All Services
-            <svg class="w-3.5 h-3.5 transition-transform chevron-icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</button>
-<div class="dropdown-menu p-4 grid grid-cols-1 md:grid-cols-3 gap-6 w-[600px] max-w-[90vw]" id="solutions-menu">
-  <!-- Surveillance -->
-  <div class="flex flex-col gap-2">
-    <span class="text-xs font-bold uppercase tracking-widest text-brand-blue mb-1">Surveillance</span>
-    <a href="cctv-installation.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">CCTV Installation</a>
-  </div>
-  <!-- Access Control -->
-  <div class="flex flex-col gap-2">
-    <span class="text-xs font-bold uppercase tracking-widest text-brand-blue mb-1">Access Control</span>
-    <a href="access-control-system.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">Access Control System</a>
-    <a href="biometric-installation.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">Biometric Installation</a>
-    <a href="boom-barrier.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">Boom Barrier</a>
-  </div>
-  <!-- IT & Automation -->
-  <div class="flex flex-col gap-2">
-    <span class="text-xs font-bold uppercase tracking-widest text-brand-blue mb-1">IT & Automation</span>
-    <a href="home-automation.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">Home Automation</a>
-    <a href="epabx-installation.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">EPABX Installation</a>
-  </div>
-</div>
+<div class="nav-item has-dropdown">
+  <a href="#" class="nav-link hover:text-brand-charcoal transition-colors">All Services <span class="dropdown-arrow">▾</span></a>
+  <ul class="dropdown-menu">
+    <li><a href="cctv-installation.html">CCTV Installation</a></li>
+    <li><a href="access-control-system.html">Access Control System</a></li>
+    <li><a href="biometric-installation.html">Biometric Installation</a></li>
+    <li><a href="boom-barrier.html">Boom Barrier</a></li>
+    <li><a href="home-automation.html">Home Automation</a></li>
+    <li><a href="epabx-installation.html">EPABX Installation</a></li>
+  </ul>
 </div>
 <a class="hover:text-brand-charcoal transition-colors" href="about.html">About Us</a>
-<a class="hover:text-brand-charcoal transition-colors" href="#why-us">Why Choose Us</a>
-<a class="hover:text-brand-charcoal transition-colors" href="#quote-section">Contact</a>
+<a class="hover:text-brand-charcoal transition-colors" href="index.html#why-us">Why Choose Us</a>
+<a class="hover:text-brand-charcoal transition-colors" href="index.html#quote-section">Contact</a>
 </nav>
 
 <!-- Right Action CTA & Mobile Toggle -->
 <div class="flex items-center gap-3">
-<a class="inline-flex items-center gap-2 bg-brand-charcoal text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 rounded-xl hover:bg-brand-blue transition-colors shadow-sm" data-purpose="cta-button" href="#quote-section">
+<a class="inline-flex items-center gap-2 bg-brand-charcoal text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 rounded-xl hover:bg-brand-blue transition-colors shadow-sm" data-purpose="cta-button" href="contact.html">
 <span>Get a Free Quote</span>
 <span class="w-5 h-5 rounded-md bg-white/20 flex items-center justify-center text-xs">↗</span>
 </a>
@@ -143,7 +128,7 @@
     </div>
     <a class="mobile-nav-item" href="about.html">About Us</a>
     <a class="mobile-nav-item" href="#why-us">Why Choose Us</a>
-    <a class="mobile-nav-item" href="#quote-section">Contact</a>
+    <a class="mobile-nav-item" href="contact.html">Contact</a>
     <div class="mt-4 pt-4 border-t border-brand-border px-6 pb-6">
       <div class="text-xs uppercase font-mono font-bold tracking-widest text-brand-blue mb-3">Direct Contact</div>
       <a href="tel:+919802737371" class="flex items-center gap-3 text-brand-charcoal font-bold text-lg mb-3">
@@ -214,7 +199,7 @@
         
         <!-- Action Buttons -->
         <div class="flex items-center gap-4 mb-14">
-          <a class="inline-flex items-center gap-3 bg-brand-charcoal text-white font-semibold text-sm sm:text-base px-7 py-4 rounded-xl hover:bg-brand-blue transition-colors shadow-xl group" href="#quote-section">
+          <a class="inline-flex items-center gap-3 bg-brand-charcoal text-white font-semibold text-sm sm:text-base px-7 py-4 rounded-xl hover:bg-brand-blue transition-colors shadow-xl group" href="contact.html">
             <span>Get a Free Quote</span>
             <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path></svg>
           </a>
@@ -301,7 +286,7 @@
               Redundant on-premise NVR arrays with encrypted off-site cloud replication
             </li>
 </ul>
-<a class="inline-flex items-center gap-2 font-semibold text-brand-blue hover:text-brand-blueDark transition-colors group" href="#quote-section">
+<a class="inline-flex items-center gap-2 font-semibold text-brand-blue hover:text-brand-blueDark transition-colors group" href="contact.html">
 <span>Consult on Surveillance System Design</span>
 <span class="group-hover:translate-x-1 transition-transform">→</span>
 </a>
@@ -352,7 +337,7 @@
               Multi-tenant visitor management &amp; QR access generation
             </li>
 </ul>
-<a class="inline-flex items-center gap-2 font-semibold text-brand-blue hover:text-brand-blueDark transition-colors group" href="#quote-section">
+<a class="inline-flex items-center gap-2 font-semibold text-brand-blue hover:text-brand-blueDark transition-colors group" href="contact.html">
 <span>Explore Access Turnstiles &amp; Readers</span>
 <span class="group-hover:translate-x-1 transition-transform">→</span>
 </a>
@@ -383,7 +368,7 @@
 <p class="text-xs text-brand-muted">KNX/IoT lighting, sensor triggers &amp; energy telemetry.</p>
 </div>
 </div>
-<a class="inline-flex items-center gap-2 font-semibold text-brand-blue hover:text-brand-blueDark transition-colors group" href="#quote-section">
+<a class="inline-flex items-center gap-2 font-semibold text-brand-blue hover:text-brand-blueDark transition-colors group" href="contact.html">
 <span>Request Infrastructure Consultation</span>
 <span class="group-hover:translate-x-1 transition-transform">→</span>
 </a>
@@ -562,105 +547,6 @@
 </section>
 <!-- END: TestimonialsSection -->
 <!-- removed deferred CaseStudyHighlight -->
-<!-- BEGIN: QuoteAndContactSection -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 pb-24 sm:scroll-mt-[10000px]" data-purpose="quote-form-section" id="quote-section">
-<div class="bg-white rounded-3xl hairline-all shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12">
-<!-- Left Side: Editorial Pitch & Direct Contact -->
-<div class="lg:col-span-5 p-8 sm:p-12 bg-brand-surface hairline-r flex flex-col justify-between">
-<div>
-<span class="text-xs uppercase font-mono font-bold tracking-widest text-brand-blue block mb-3">Priority Consultation</span>
-<h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-brand-charcoal mb-4">
-              Start Here for a <br/>
-<span class="serif-accent font-normal text-brand-blue">Custom Security Blueprint.</span>
-</h2>
-<p class="text-sm text-brand-muted leading-relaxed mb-8">
-              Speak with our senior systems architect. We offer no-obligation on-premise security site audits, hardware specs, and transparent B2B pricing.
-            </p>
-<div class="space-y-4 pt-6 hairline-t">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-xl bg-white hairline-all flex items-center justify-center text-brand-blue">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<div>
-<span class="text-xs text-brand-muted block">Sales</span>
-<a class="font-bold text-base text-brand-charcoal hover:text-brand-blue transition-colors" href="tel:+919802737371">+91 9802737371</a>
-</div>
-</div>
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-xl bg-white hairline-all flex items-center justify-center text-brand-blue">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.974 0-5.742-.536-8.227-1.5M19.843 7.582A8.997 8.997 0 0121 12m-18-4.418A8.997 8.997 0 003 12" /></svg>
-</div>
-<div>
-<span class="text-xs text-brand-muted block">Support</span>
-<a class="font-bold text-base text-brand-charcoal hover:text-brand-blue transition-colors" href="tel:01244145509">0124-4145509</a>
-</div>
-</div>
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-xl bg-white hairline-all flex items-center justify-center text-brand-blue">
-<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</div>
-<div>
-<span class="text-xs text-brand-muted block">Email</span>
-<a class="font-bold text-base text-brand-charcoal hover:text-brand-blue transition-colors" href="mailto:sales@justprotex.com">sales@justprotex.com</a>
-</div>
-</div>
-</div>
-
-  <div class="mt-8 overflow-hidden rounded-2xl hairline-all shadow-sm">
-    <iframe
-      src="https://www.google.com/maps?q=JustProtex,707+A+Vipul+Business+Park,Sector+48,Gurugram&output=embed"
-      width="100%" height="350" style="border:0;" loading="lazy">
-    </iframe>
-  </div>
-</div>
-<div class="mt-8 pt-6 hairline-t text-xs text-brand-muted">
-            ISO Certified • Rapid Response Engineering • Confidential NDAs Honored
-          </div>
-</div>
-<!-- Right Side: Refined Modern B2B Request Form -->
-<div class="lg:col-span-7 p-8 sm:p-12">
-<form class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you. A JustProtex Systems Architect will reach out to you within 2 business hours.');">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div>
-<label class="block text-xs font-semibold uppercase tracking-wider text-brand-charcoal mb-2">Full Name *</label>
-<input class="w-full rounded-xl border-brand-border bg-brand-surface/40 focus:border-brand-blue focus:ring-brand-blue text-sm py-3 px-4" placeholder="e.g. Vikram Malhotra" required="" type="text"/>
-</div>
-<div>
-<label class="block text-xs font-semibold uppercase tracking-wider text-brand-charcoal mb-2">Mobile Number *</label>
-<input class="w-full rounded-xl border-brand-border bg-brand-surface/40 focus:border-brand-blue focus:ring-brand-blue text-sm py-3 px-4" placeholder="+91 98000 00000" required="" type="tel"/>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div>
-<label class="block text-xs font-semibold uppercase tracking-wider text-brand-charcoal mb-2">Work Email *</label>
-<input class="w-full rounded-xl border-brand-border bg-brand-surface/40 focus:border-brand-blue focus:ring-brand-blue text-sm py-3 px-4" placeholder="name@company.com" required="" type="email"/>
-</div>
-<div>
-<label class="block text-xs font-semibold uppercase tracking-wider text-brand-charcoal mb-2">Facility / Site Type</label>
-<select class="w-full rounded-xl border-brand-border bg-brand-surface/40 focus:border-brand-blue focus:ring-brand-blue text-sm py-3 px-4" id="service-interest">
-<option>Corporate Office / Tech Park</option>
-<option>Manufacturing / Warehouse Hub</option>
-<option>Luxury Residential Estate</option>
-<option>Hospitality / Retail Complex</option>
-<option>Other Infrastructure Project</option>
-</select>
-</div>
-</div>
-<div>
-<label class="block text-xs font-semibold uppercase tracking-wider text-brand-charcoal mb-2">Project Requirements &amp; Scope</label>
-<textarea class="w-full rounded-xl border-brand-border bg-brand-surface/40 focus:border-brand-blue focus:ring-brand-blue text-sm py-3 px-4" id="project-details" placeholder="Describe your site layout, number of channels, required AI analytics, or timeline..." rows="4"></textarea>
-</div>
-<div class="flex items-center justify-between pt-2">
-<button class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-blue hover:bg-brand-blueDark text-white font-bold text-sm px-8 py-4 rounded-xl transition-all shadow-md" type="submit">
-<span>Request a Quote</span>
-<span class="w-5 h-5 rounded-md bg-white/20 flex items-center justify-center text-xs">↗</span>
-</button>
-</div>
-</form>
-</div>
-</div>
-</section>
-<!-- END: QuoteAndContactSection -->
 </main>
 <div id="footer-placeholder"></div>
 

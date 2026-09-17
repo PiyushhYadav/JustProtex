@@ -71,35 +71,20 @@
 <!-- Minimal Editorial Navigation -->
 <nav class="desktop-nav" id="main-nav" data-purpose="primary-navigation">
 <a class="hover:text-brand-charcoal transition-colors" href="index.html">Home</a>
-<div class="relative dropdown-container" id="solutions-dropdown-container">
-<button class="flex items-center gap-1 text-brand-charcoal hover:text-brand-blue transition-colors py-1 dropdown-trigger" aria-expanded="false" aria-controls="solutions-menu">
-            All Services
-            <svg class="w-3.5 h-3.5 transition-transform chevron-icon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M19.5 8.25l-7.5 7.5-7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-</button>
-<div class="dropdown-menu p-4 grid grid-cols-1 md:grid-cols-3 gap-6 w-[600px] max-w-[90vw]" id="solutions-menu">
-  <!-- Surveillance -->
-  <div class="flex flex-col gap-2">
-    <span class="text-xs font-bold uppercase tracking-widest text-brand-blue mb-1">Surveillance</span>
-    <a href="cctv-installation.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">CCTV Installation</a>
-  </div>
-  <!-- Access Control -->
-  <div class="flex flex-col gap-2">
-    <span class="text-xs font-bold uppercase tracking-widest text-brand-blue mb-1">Access Control</span>
-    <a href="access-control-system.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">Access Control System</a>
-    <a href="biometric-installation.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">Biometric Installation</a>
-    <a href="boom-barrier.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">Boom Barrier</a>
-  </div>
-  <!-- IT & Automation -->
-  <div class="flex flex-col gap-2">
-    <span class="text-xs font-bold uppercase tracking-widest text-brand-blue mb-1">IT & Automation</span>
-    <a href="home-automation.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">Home Automation</a>
-    <a href="epabx-installation.html" class="text-sm font-medium text-brand-charcoal hover:text-brand-blue transition-colors py-1">EPABX Installation</a>
-  </div>
-</div>
+<div class="nav-item has-dropdown">
+  <a href="#" class="nav-link hover:text-brand-charcoal transition-colors">All Services <span class="dropdown-arrow">▾</span></a>
+  <ul class="dropdown-menu">
+    <li><a href="cctv-installation.html">CCTV Installation</a></li>
+    <li><a href="access-control-system.html">Access Control System</a></li>
+    <li><a href="biometric-installation.html">Biometric Installation</a></li>
+    <li><a href="boom-barrier.html">Boom Barrier</a></li>
+    <li><a href="home-automation.html">Home Automation</a></li>
+    <li><a href="epabx-installation.html">EPABX Installation</a></li>
+  </ul>
 </div>
 <a class="hover:text-brand-charcoal transition-colors" href="about.html">About Us</a>
 <a class="hover:text-brand-charcoal transition-colors" href="index.html#why-us">Why Choose Us</a>
-<a class="hover:text-brand-charcoal transition-colors" href="contact.html">Contact</a>
+<a class="hover:text-brand-charcoal transition-colors" href="index.html#quote-section">Contact</a>
 </nav>
 
 <!-- Right Action CTA & Mobile Toggle -->

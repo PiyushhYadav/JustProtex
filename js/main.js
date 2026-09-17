@@ -110,3 +110,21 @@ window.initHeaderJS = function() {
 
 };
 document.addEventListener('DOMContentLoaded', window.initHeaderJS);
+
+// Footer Injection
+function loadFooter() {
+  const placeholder = document.getElementById('footer-placeholder');
+  if (placeholder) {
+    fetch('partials/footer.html')
+      .then(response => response.text())
+      .then(html => {
+        placeholder.innerHTML = html;
+        const yearElem = placeholder.querySelector('#year');
+        if (yearElem) {
+          yearElem.textContent = new Date().getFullYear();
+        }
+      })
+      .catch(err => console.error('Failed to load footer:', err));
+  }
+}
+document.addEventListener('DOMContentLoaded', loadFooter);

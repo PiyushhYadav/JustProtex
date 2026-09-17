@@ -198,47 +198,54 @@
     </div>
 
     <!-- Right: Our Services Box -->
-    <div class="lg:col-span-5 relative">
-      <div class="bg-[#0F1E3C] text-white rounded-[2rem] p-8 md:p-12 shadow-2xl relative overflow-hidden group">
+    <div class="lg:col-span-5 flex flex-col relative group">
+      
+      <!-- Top Blue Box -->
+      <div class="bg-[#0F1E3C] text-white rounded-t-[2rem] p-8 md:p-12 shadow-xl relative overflow-hidden z-20">
         <!-- Abstract background shape -->
-        <div class="absolute -right-20 -top-20 w-64 h-64 bg-brand-blue/20 rounded-full blur-3xl group-hover:bg-brand-blue/30 transition-colors duration-700"></div>
+        <div class="absolute -right-10 -top-10 w-48 h-48 bg-brand-blue/20 rounded-full blur-3xl group-hover:bg-brand-blue/30 transition-colors duration-700"></div>
+        <h3 class="text-5xl md:text-6xl font-black italic uppercase tracking-tighter leading-none relative z-10">
+          Our<br/>Services
+        </h3>
+      </div>
+      
+      <!-- Middle Image (The 'Empty White Box') -->
+      <div class="bg-gray-50 flex justify-center items-center relative -mt-6 z-10 w-full h-64 border-x border-gray-200">
+        <!-- We use a placeholder that clearly states what goes here -->
+        <img src="images/cctv_camera_transparent.png" alt="CCTV Camera" class="object-contain h-[120%] w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-110 drop-shadow-2xl z-30" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/f8fafc/0f1e3c?text=Needs+Transparent+CCTV+Camera+PNG';">
+      </div>
+
+      <!-- Bottom White Box -->
+      <div class="bg-white rounded-b-[2rem] p-8 md:p-12 shadow-xl border border-gray-100 z-20">
+        <p class="text-xl md:text-2xl font-semibold mb-6 text-brand-charcoal leading-tight">Protect your premises from intruders.</p>
+        <p class="text-lg font-bold mb-6 text-brand-blue">What do you get?</p>
         
-        <div class="relative z-10">
-          <h3 class="text-5xl md:text-6xl font-black italic uppercase tracking-tighter mb-8 leading-none">
-            Our<br/>Services
-          </h3>
-          
-          <p class="text-xl md:text-2xl font-semibold mb-6">Protect your home from intruders.</p>
-          
-          <p class="text-lg font-bold mb-6 text-brand-blue">What do you get?</p>
-          
-          <ul class="space-y-4 font-medium text-white/90">
-            <li class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-brand-blue flex items-center justify-center shrink-0">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
-              </div>
-              CCTV installation
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-brand-blue flex items-center justify-center shrink-0">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
-              </div>
-              Biometric installation
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-brand-blue flex items-center justify-center shrink-0">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
-              </div>
-              Home automation
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-brand-blue flex items-center justify-center shrink-0">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
-              </div>
-              EPABX installation
-            </li>
-          </ul>
-        </div>
+        <ul class="space-y-4 font-medium text-brand-charcoal/80">
+          <li class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-brand-blue/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+            </div>
+            Free on-site consultation
+          </li>
+          <li class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-brand-blue/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+            </div>
+            Genuine, warrantied hardware
+          </li>
+          <li class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-brand-blue/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+            </div>
+            Certified installation team
+          </li>
+          <li class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-brand-blue/10 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+            </div>
+            24/7 post-install support
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -260,7 +267,7 @@
     .client-logo-box:hover { transform: scale(1.05); border-color: #2563eb; }
     /* Custom brand colors for fake logos */
     .brand-prestige { color: #e11d48; font-family: serif; text-transform: capitalize; }
-    .brand-crc { background: #dc2626; color: white; border-radius: 50%; height: 80px; min-width: 160px; border-radius: 40px; }
+    .brand-crc { background: #dc2626; color: white; height: 80px; min-width: 160px; border-radius: 40px; display: flex; align-items: center; justify-content: center; }
     .brand-healthkart { color: #0891b2; letter-spacing: 0.1em; font-weight: 900; }
     .brand-tvs { color: #1e3a8a; font-style: italic; font-weight: 900; border-bottom: 4px solid #dc2626; }
     .brand-wellway { color: #65a30d; text-transform: none; }
@@ -352,6 +359,14 @@
             Chat on WhatsApp
           </a>
         </div>
+          <!-- Google Maps Embed -->
+          <div class="mt-10 overflow-hidden rounded-2xl hairline-all shadow-sm">
+            <iframe
+              src="https://www.google.com/maps?q=JustProtex,707+A+Vipul+Business+Park,Sector+48,Gurugram&output=embed"
+              width="100%" height="350" style="border:0;" loading="lazy">
+            </iframe>
+          </div>
+
       </div>
       
       <!-- Lead Form Card -->

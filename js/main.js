@@ -110,21 +110,31 @@ window.initHeaderJS = function() {
 
 };
 document.addEventListener('DOMContentLoaded', window.initHeaderJS);
-
-// Footer Injection
-function loadFooter() {
-  const placeholder = document.getElementById('footer-placeholder');
-  if (placeholder) {
-    fetch('partials/footer.html')
-      .then(response => response.text())
-      .then(html => {
-        placeholder.innerHTML = html;
-        const yearElem = placeholder.querySelector('#year');
-        if (yearElem) {
-          yearElem.textContent = new Date().getFullYear();
-        }
-      })
-      .catch(err => console.error('Failed to load footer:', err));
+async function loadPartial(url, placeholderId) {
+  try {
+    const res = await fetch(url);
+    const html = await res.text();
+    const placeholder = document.getElementById(placeholderId);
+    if(placeholder) placeholder.innerHTML = html;
+  } catch (err) {
+    console.error(`Failed to load ${url}:`, err);
   }
 }
-document.addEventListener('DOMContentLoaded', loadFooter);
+
+function highlightActiveNavLink() {
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('#header-placeholder a').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href || href.includes('#')) return; // skip in-page anchors like Why Choose Us
+    const linkPath = href.split('/').pop();
+    if (linkPath === currentPath) link.classList.add('active');
+  });
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadPartial('partials/header.html', 'header-placeholder');
+  highlightActiveNavLink();
+  if(window.initHeaderJS) window.initHeaderJS();
+  
+  loadPartial('partials/footer.html', 'footer-placeholder');
+});

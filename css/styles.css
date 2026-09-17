@@ -3298,3 +3298,6 @@ video {
 }
 
 .nav-item.has-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
+
+#header-placeholder { min-height: 110px; }
+.desktop-nav a.active, .mobile-nav-panel a.active { color: #0A66C2 !important; font-weight: 700; }

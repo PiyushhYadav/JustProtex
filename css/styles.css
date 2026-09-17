@@ -3301,3 +3301,28 @@ video {
 
 #header-placeholder { min-height: 110px; }
 .desktop-nav a.active, .mobile-nav-panel a.active { color: #0A66C2 !important; font-weight: 700; }
+
+
+/* --- Team Photo Card --- */
+.team-photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.team-photo {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(3, 14, 22, 0.08);
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.group:hover .team-photo {
+  transform: scale(1.03);
+}

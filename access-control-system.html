@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JustProtex â€” AI-Enabled Security &amp; Infrastructure Engineering</title>
+<!-- Google Fonts: Plus Jakarta Sans & Newsreader -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500;1,6..72,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Forms & Container Queries -->
+
+<!-- Tailwind Custom Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              ivory: '#FBF9F5',
+              surface: '#F5F2EB',
+              charcoal: '#111111',
+              muted: '#5A5955',
+              border: '#E7E3D9',
+              blue: '#0A66C2',
+              blueDark: '#004B8F',
+              accentGreen: '#34D399',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Newsreader"', 'Georgia', 'serif'],
+          },
+          letterSpacing: {
+            tighter: '-0.04em',
+            tight: '-0.02em',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles: Typography & Micro-Interactions -->
+
+
+<link rel="stylesheet" href="css/styles.css">
+<script src='js/components.js'></script>
+</head>
+<body class="bg-editorial text-brand-charcoal selection:bg-brand-blue selection:text-white">
+
+<site-header></site-header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="relative w-full h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Access Control System" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/50 mix-blend-multiply"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif text-white font-bold leading-tight drop-shadow-lg">
+        Access Control System
+      </h1>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 md:py-24 bg-white hairline-b">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-serif font-semibold text-brand-charcoal mb-6">
+        About this service
+      </h2>
+      <div class="prose prose-lg text-brand-muted prose-a:text-brand-blue hover:prose-a:text-brand-blueDark leading-relaxed">
+        <p>
+          At JustProtex, we provide comprehensive <strong>card, biometric, or PIN-based entry systems that manage building/zone access, with visitor logs and permission management</strong>. Our expert team ensures seamless integration with your existing infrastructure, delivering unmatched reliability and performance.
+        </p>
+        <p>
+          We employ the latest industry standards to guarantee that your setup is future-proof and robust. From initial consultation and design to final deployment and maintenance, we offer end-to-end support tailored specifically to your operational needs.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<site-footer></site-footer>
+
+<!-- Floating Quick WhatsApp / Contact Action -->
+<a aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 w-14 h-14 bg-emerald-500 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-50 group" href="https://api.whatsapp.com/send/?phone=919802737371" rel="noopener noreferrer" target="_blank">
+<svg class="w-7 h-7" fill="currentColor" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"></path></svg>
+</a>
+<!-- Dynamic Year Script -->
+  <script data-purpose="current-year">
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body></html>

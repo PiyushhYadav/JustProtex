@@ -1,6 +1,6 @@
 class SiteHeader extends HTMLElement {
   connectedCallback() {
-    fetch(\'header.html\')
+    fetch('header.html')
       .then(response => response.text())
       .then(html => {
         this.innerHTML = html;
@@ -8,3 +8,6 @@ class SiteHeader extends HTMLElement {
       });
   }
 }
+
+
+customElements.define('site-header', SiteHeader);

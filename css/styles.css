@@ -3326,3 +3326,9 @@ video {
 .group:hover .team-photo {
   transform: scale(1.03);
 }
+
+
+/* Safety net to prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+}

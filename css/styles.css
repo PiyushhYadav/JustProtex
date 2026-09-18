@@ -3336,24 +3336,33 @@ body {
 
 /* --- Hero Layout Fix --- */
 .hero-section {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   overflow: hidden;
 }
 
-@media (min-width: 1024px) {
-  .hero-section {
-    display: grid;
-    grid-template-columns: 1.15fr 1fr; /* Slightly wider left column to match CCTV 7:5 proportions */
-    align-items: stretch;
-  }
+.hero-content {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-image-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
   min-width: 0;
-  height: 100%;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%);
-  mask-image: linear-gradient(to right, transparent 0%, black 12%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
+  mask-image: linear-gradient(to right, transparent 0%, black 20%);
+}
+
+@media (min-width: 1024px) {
+  .hero-image-wrap {
+    width: 78%;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    mask-image: linear-gradient(to right, transparent 0%, black 30%);
+  }
 }
 
 .hero-image-wrap img {

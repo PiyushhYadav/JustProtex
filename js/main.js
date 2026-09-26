@@ -137,4 +137,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   if(window.initHeaderJS) window.initHeaderJS();
   
   loadPartial('partials/footer.html', 'footer-placeholder');
+
+  // Initialize AOS (Animate On Scroll)
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (window.AOS) {
+    window.AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 80,
+      disable: () => reduceMotion
+    });
+  } else {
+    document.querySelectorAll('[data-aos]').forEach(el => el.removeAttribute('data-aos'));
+  }
+
 });
